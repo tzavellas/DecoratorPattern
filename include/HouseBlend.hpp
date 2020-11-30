@@ -6,7 +6,7 @@
 class HouseBlend : public Beverage
 {
 public:
-    HouseBlend();
+    HouseBlend(const Size& size = Size::TALL);
     double cost() const override;
 };
 

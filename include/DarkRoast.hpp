@@ -6,7 +6,7 @@
 class DarkRoast : public Beverage
 {
 public:
-    DarkRoast();
+    DarkRoast(const Size& size = Size::TALL);
     double cost() const override;
 };
 

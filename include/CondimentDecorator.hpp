@@ -8,6 +8,7 @@ class CondimentDecorator : public Beverage
 {
 public:
     ~CondimentDecorator() = default;
+    Size getSize() const override;
 protected:
     CondimentDecorator(const std::shared_ptr< Beverage >& beverage);
     std::shared_ptr< Beverage > m_Beverage;

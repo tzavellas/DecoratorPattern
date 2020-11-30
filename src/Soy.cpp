@@ -21,6 +21,21 @@ double Soy::cost() const
     if (m_Beverage)
     {
         ret = m_Beverage->cost();
+        switch(m_Beverage->getSize())
+        {
+            case Size::TALL:
+                ret += .10;
+                break;
+            case Size::GRANDE:
+                ret += .15;
+                break;
+            case Size::VENTI:
+                ret += .20;
+                break;
+            default:
+                ret += .0;
+                break;
+        }
     }
-    return ret + .15;
+    return ret;
 }

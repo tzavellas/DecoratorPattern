@@ -1,6 +1,6 @@
 #include "Espresso.hpp"
 
-Espresso::Espresso() : Beverage("Espresso")
+Espresso::Espresso(const Size& size) : Beverage("Espresso", size)
 {
     // nothing to do
 }

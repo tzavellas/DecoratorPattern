@@ -1,6 +1,6 @@
 #include "Decaf.hpp"
 
-Decaf::Decaf() : Beverage("Decaf")
+Decaf::Decaf(const Size& size) : Beverage("Decaf", size)
 {
     // nothing to do
 }

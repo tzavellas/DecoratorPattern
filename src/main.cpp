@@ -18,7 +18,7 @@ int main()
     beverage2 = std::make_shared< Whip >(beverage2);
     std::cout << beverage2->getDescription() << " $" << beverage2->cost() << std::endl;
 
-    std::shared_ptr< Beverage > beverage3 = std::make_shared< HouseBlend >();
+    std::shared_ptr< Beverage > beverage3 = std::make_shared< HouseBlend >(Beverage::Size::VENTI);
     beverage3 = std::make_shared< Soy >(beverage3);
     beverage3 = std::make_shared< Mocha >(beverage3);
     beverage3 = std::make_shared< Whip >(beverage3);

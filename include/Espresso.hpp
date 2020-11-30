@@ -6,7 +6,7 @@
 class Espresso : public Beverage
 {
 public:
-    Espresso();
+    Espresso(const Size& size = Size::TALL);
     double cost() const override;
 };
 

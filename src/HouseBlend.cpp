@@ -1,6 +1,6 @@
 #include "HouseBlend.hpp"
 
-HouseBlend::HouseBlend() : Beverage("House Blend Coffee")
+HouseBlend::HouseBlend(const Size& size) : Beverage("House Blend Coffee", size)
 {
     // nothing to do
 }

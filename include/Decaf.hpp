@@ -6,7 +6,7 @@
 class Decaf : public Beverage
 {
 public:
-    Decaf();
+    Decaf(const Size& size = Size::TALL);
     double cost() const override;
 };
 

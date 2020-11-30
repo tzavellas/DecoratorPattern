@@ -1,6 +1,6 @@
 #include "DarkRoast.hpp"
 
-DarkRoast::DarkRoast() : Beverage("Dark Roast Coffee")
+DarkRoast::DarkRoast(const Size& size) : Beverage("Dark Roast Coffee", size)
 {
     // nothing to do
 }
