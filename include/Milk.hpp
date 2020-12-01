@@ -6,7 +6,7 @@
 class Milk : public CondimentDecorator
 {
 public:
-    Milk(const std::shared_ptr< Beverage >& beverage);
+    Milk(std::unique_ptr< Beverage > beverage);
     std::string getDescription() const override;
     double cost() const override;
 };

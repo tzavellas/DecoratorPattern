@@ -1,6 +1,6 @@
 #include "CondimentDecorator.hpp"
 
-CondimentDecorator::CondimentDecorator(const std::shared_ptr< Beverage >& beverage) : m_Beverage{beverage}
+CondimentDecorator::CondimentDecorator(std::unique_ptr< Beverage > beverage) : m_Beverage{std::move(beverage)}
 {
     // nothing to do
 }

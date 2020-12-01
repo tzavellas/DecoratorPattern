@@ -6,7 +6,7 @@
 class Mocha : public CondimentDecorator
 {
 public:
-    Mocha(const std::shared_ptr< Beverage >& beverage);
+    Mocha(std::unique_ptr< Beverage > beverage);
     std::string getDescription() const override;
     double cost() const override;
 };

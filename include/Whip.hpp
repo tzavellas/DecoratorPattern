@@ -6,7 +6,7 @@
 class Whip : public CondimentDecorator
 {
 public:
-    Whip(const std::shared_ptr< Beverage >& beverage);
+    Whip(std::unique_ptr< Beverage > beverage);
     std::string getDescription() const override;
     double cost() const override;
 };

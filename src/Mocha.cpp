@@ -1,6 +1,6 @@
 #include "Mocha.hpp"
 
-Mocha::Mocha(const std::shared_ptr<Beverage>& beverage) : CondimentDecorator(beverage)
+Mocha::Mocha(std::unique_ptr< Beverage > beverage) : CondimentDecorator(std::move(beverage))
 {
     // nothing to do
 }

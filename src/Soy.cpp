@@ -1,6 +1,6 @@
 #include "Soy.hpp"
 
-Soy::Soy(const std::shared_ptr<Beverage>& beverage) : CondimentDecorator(beverage)
+Soy::Soy(std::unique_ptr< Beverage > beverage) : CondimentDecorator(std::move(beverage))
 {
     // nothing to do
 }

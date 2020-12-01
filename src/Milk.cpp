@@ -1,6 +1,6 @@
 #include "Milk.hpp"
 
-Milk::Milk(const std::shared_ptr<Beverage>& beverage) : CondimentDecorator(beverage)
+Milk::Milk(std::unique_ptr< Beverage > beverage) : CondimentDecorator(std::move(beverage))
 {
     // nothing to do
 }
